@@ -31,3 +31,21 @@ address{
 .navbar-dark {
     background-color: #a42da8;
 }
+
+.cardtitlecolor {
+    color:#ce53d3;  
+}
+.price {
+    color:#ce53d3; 
+    font-size:35px;
+    font-weight: 700;
+ 
+}
+.button {
+    outline: #dbd5d5;
+
+}
+
+/* .cartitem {
+    height: 50px;
+} */

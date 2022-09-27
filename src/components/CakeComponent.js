@@ -8,10 +8,10 @@ import { baseUrl } from '../shared/baseUrl';
 function RenderCakeItem({ cake }) {
     return(
         <Card>
-            <Link to= {`/menu/${cake.id}`}>
+            <Link to= {`/cakes/${cake.id}`}>
                 <CardImg width="100%" src={baseUrl + cake.image} alt={cake.name} />
                 <CardImgOverlay>
-                    <CardTitle>{cake.name}</CardTitle>
+                    <CardTitle className="cardtitlecolor">{cake.name}</CardTitle>
                 </CardImgOverlay>
             </Link>
         </Card>
@@ -62,9 +62,10 @@ else if (props.errMess)  {
                             <hr />
                         </div>
                     </div>
-                    <div className="row">
-                        {menu}
+                     <div className="row ">
+                            {menu}
                     </div>
+                    
                 </div>
 
             

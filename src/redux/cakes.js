@@ -1,9 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 
-export const Cakes = (state = { isLoading: true,
-    errMess: null,
-    cakes:[]
-}, action) => {
+export const Cakes = (state = { isLoading: true, errMess: null, cakes:[]}, action) => {
     switch (action.type) {
         case ActionTypes.ADD_CAKES:
             return {...state, isLoading: false, errMess: null, cakes: action.payload};
