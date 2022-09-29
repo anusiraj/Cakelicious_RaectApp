@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, ModalHeader, Modal, ModalBody,
-    CardTitle, Breadcrumb, BreadcrumbItem, Button, Row, Col, Label } from 'reactstrap';
+import { Card, CardImg,ModalHeader, Modal, ModalBody, Breadcrumb, BreadcrumbItem, Button, Row, Col, Label } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
-import ReactStars from "react-rating-stars-component";
-
 
 
 const required = (val) => val && val.length;
@@ -57,7 +54,7 @@ class ReviewForm extends Component {
                     <Row className="form-group">
                             <Label htmlFor="rating" md={2}>Rating</Label>
                             <Col md={11}>
-                                    <Control.select model=".rating" name="rating"
+                                    <Control.Select model=".rating" name="rating"
                                         className="form-control">
                                         <option>Select rating</option>
                                         <option>1</option>
@@ -66,13 +63,13 @@ class ReviewForm extends Component {
                                         <option>4</option>
                                         <option>5</option>
 
-                                    </Control.select>
+                                    </Control.Select>
                                 </Col>
                         </Row>
                         <Row className="form-group">
                                 <Label htmlFor="yourname" md={3}>Your Name</Label>
                                 <Col md={11}>
-                                    <Control.text model=".author" id="author" name="author"
+                                    <Control.Text model=".author" id="author" name="author"
                                         placeholder="Your Name"
                                         className="form-control"
                                         validators={{
@@ -95,7 +92,7 @@ class ReviewForm extends Component {
                             <Row className="form-group">
                                 <Label htmlFor="review" md={2}>Review</Label>
                                 <Col md={11}>
-                                    <Control.textarea model=".review" id="review" name="review"
+                                    <Control.Textarea model=".review" id="review" name="review"
                                         rows="6"
                                         className="form-control" />
                                 </Col>
