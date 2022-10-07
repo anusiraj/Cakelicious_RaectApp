@@ -60,7 +60,7 @@ function RenderCake({cake, cakeId, postCart}) {
                 </Card>
             </div>
             
-            <AddToCart cakeId={cakeId} postCart={postCart(cakeId, cake.name, cake.price)} />
+            {/* <AddToCart cakeId={cakeId} postCart={postCart(cakeId, cake.name, cake.price)} /> */}
         </div>
     );
 }
